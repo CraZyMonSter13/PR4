@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="HTML, CSS" name="keywords">
+  <meta content="Васильченко Алексей" name="author">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <img alt="Место-Россия" class="header__logo" src="./images/header_logo.svg">
+    <img alt="Линия" class="header__line" src="./images/header_line.svg">
+  </header>
+
+  <main class="container">
+
+    <section class="profile">
+      <img alt="Аватар" class="profile__avatar" src="./images/avatar.svg">
+      <div class="profile__info">
+        <div class="profile__name-block">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button type="button" class="profile__edit-button" aria-label="Редактировать"></button>
+        </div>
+        <p class="profile__subtitle">Исследователь океана</p>
+      </div>
+      <button type="button" class="profile__add-button" aria-label="Добавить фотографию"></button>
+    </section>
+
+    <section class="elements">
+      <div class="elements__card">
+        <img alt="Карачаевск" class="elements__image" src="./images/Karachaevsk.svg">
+        <div class="elements__description">
+          <h2 class="elements__title">Карачаевск</h2>
+          <button type="button" class="elements__like" aria-label="Лайк"></button>
+        </div>
+      </div>
+      <div class="elements__card">
+        <img alt="Гора Эльбрус" class="elements__image" src="./images/Mountain_Elbrus.svg">
+        <div class="elements__description">
+          <h2 class="elements__title">Гора Эльбрус</h2>
+          <button type="button" class="elements__like" aria-label="Лайк"></button>
+        </div>
+      </div>
+      <div>
+        <div class="elements__card">
+          <img alt="Домбай" class="elements__image" src="./images/Dombay.svg">
+          <div class="elements__description">
+            <h2 class="elements__title">Домбай</h2>
+            <button type="button" class="elements__like" aria-label="Лайк"></button>
+          </div>
+        </div>
+      </div>
+      <div class="elements__card">
+        <img alt="Гора Эльбрус" class="elements__image" src="./images/Mountain_Elbrus.svg">
+        <div class="elements__description">
+          <h2 class="elements__title">Гора Эльбрус</h2>
+          <button type="button" class="elements__like" aria-label="Лайк"></button>
+        </div>
+      </div>
+      <div>
+        <div class="elements__card">
+          <img alt="Домбай" class="elements__image" src="./images/Dombay.svg">
+          <div class="elements__description">
+            <h2 class="elements__title">Домбай</h2>
+            <button type="button" class="elements__like" aria-label="Лайк"></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="elements__card">
+          <img alt="Карачаево-Ч..." class="elements__image" src="./images/Karachaevsk.svg">
+          <div class="elements__description">
+            <h2 class="elements__title">Карачаево-черкесия</h2>
+            <button type="button" class="elements__like" aria-label="Лайк"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy;&nbsp;2023 Васильченко Алексей</p>
+  </footer>
+
+  <section class="popup">
+    <div class="popup__container">
+      <form class="popup__form" name="resave" method="GET" aria-label='получения инфо и передачи данных в адресной строке'>
+        <h2 class="popup__title">Редактировать профиль</h2>
+          <input type="text" name="name" placeholder="Жак-Ив Кусто" value='Жак-Ив Кусто' class="popup__input popup__input_name">
+          <input type="text" name="job" placeholder="Исследователь океана" value='Исследователь океана' class="popup__input popup__input_job">
+        <button type="submit" class="popup__button-save" aria-label="Сохранить"></button>
+        <button type="button" class="popup__close" aria-label="Закрыть"></button>
+      </form>
+    </div>
+  </section>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
